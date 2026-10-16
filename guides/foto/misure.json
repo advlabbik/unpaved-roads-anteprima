@@ -1,0 +1,146 @@
+{
+ "pa-copertina": [
+  1600,
+  1200
+ ],
+ "pa-partenza": [
+  1600,
+  1200
+ ],
+ "pa-bivio": [
+  1600,
+  1067
+ ],
+ "pa-bici": [
+  1600,
+  1067
+ ],
+ "pa-costa": [
+  1600,
+  1200
+ ],
+ "pa-diaccia": [
+  1600,
+  1200
+ ],
+ "pa-castiglione": [
+  1600,
+  1200
+ ],
+ "pa-talk": [
+  1600,
+  1067
+ ],
+ "pa-aperitivo": [
+  1600,
+  1067
+ ],
+ "pa-camp": [
+  1600,
+  1067
+ ],
+ "pa-cartina": [
+  1600,
+  1067
+ ],
+ "pa-arrivo": [
+  1600,
+  900
+ ],
+ "vds-copertina": [
+  1600,
+  1067
+ ],
+ "vds-village": [
+  1600,
+  1067
+ ],
+ "vds-bivio": [
+  1600,
+  1200
+ ],
+ "vds-bici": [
+  1600,
+  1067
+ ],
+ "vds-ossana": [
+  1600,
+  1067
+ ],
+ "vds-tonale": [
+  1600,
+  1067
+ ],
+ "vds-forestale": [
+  1600,
+  1067
+ ],
+ "vds-pacco": [
+  1600,
+  1067
+ ],
+ "vds-talk": [
+  1600,
+  1066
+ ],
+ "vds-banner": [
+  1600,
+  1067
+ ],
+ "vds-sorrisi": [
+  1600,
+  1067
+ ],
+ "vds-valle": [
+  1600,
+  1067
+ ],
+ "fc-copertina": [
+  1600,
+  1200
+ ],
+ "fc-santa-sofia": [
+  1600,
+  1200
+ ],
+ "fc-bivio": [
+  1600,
+  1067
+ ],
+ "fc-bici": [
+  1600,
+  1066
+ ],
+ "fc-ridracoli": [
+  1600,
+  1200
+ ],
+ "fc-faggeta": [
+  1600,
+  1067
+ ],
+ "fc-san-paolo": [
+  1600,
+  1067
+ ],
+ "fc-estrazione": [
+  1600,
+  1067
+ ],
+ "fc-pro-loco": [
+  1600,
+  1067
+ ],
+ "fc-tortelli": [
+  1600,
+  1067
+ ],
+ "fc-ristoro": [
+  1600,
+  1200
+ ],
+ "fc-sorrisi": [
+  1600,
+  1200
+ ]
+}

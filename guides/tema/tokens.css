@@ -1,0 +1,146 @@
+/* ============================================================
+   Unpaved Roads · token delle guide
+   I colori sono quelli di unpavedroads.cc (src/styles/tokens.css del sito, ottobre 2026):
+   petrolio #33647E e petrolio scuro #1F4153 della scritta del logo, ruggine #C8602D
+   della barra del logo, polvere di strada bianca #F5F2EC.
+   I nomi dei token restano quelli delle guide Tuscany Trail, NorthCape4000 e
+   Trentino Gravel, così guide.css e chrome.css sono gli stessi file con le stesse classi.
+   I font sono quelli del sito: DM Serif Display per i titoli, DM Sans per etichette
+   e numeri, Inter per il testo.
+   ============================================================ */
+
+:root {
+  /* --- Colori ---------------------------------------------------------
+     Contrasti (WCAG AA, testo piccolo):
+       --oro su --neve ................ 5,1:1  (occhielli, ruggine come testo)
+       --muted su --neve .............. 6,9:1  (etichette)
+       --blu su --neve ................ 5,6:1  (link e numeri)
+     --oro-chiaro (la ruggine del logo) è solo per numeri grandi e segni. */
+  --neve: #f5f2ec;         /* fondo della pagina, la polvere di strada bianca del sito */
+  --paper: #ece6db;        /* fondo dei riquadri speciali */
+  --blu: #33647e;          /* colore primario: numeri, bottoni, barre */
+  --blu-notte: #1f4153;    /* hover del primario */
+  --ghiaccio: #f2b48c;     /* testo secondario sul petrolio, evidenziatore */
+  --ink: #1f4153;          /* testo corrente */
+  --oro: #a84b1c;          /* occhielli sopra i titoli */
+  --oro-chiaro: #c8602d;   /* numeri dei capitoli, segni */
+  --heading: #1f4153;      /* titoli */
+
+  --line: rgba(51, 100, 126, 0.18);
+  --line-strong: rgba(51, 100, 126, 0.26);
+  --line-hard: rgba(51, 100, 126, 0.4);
+  --line-neve: rgba(245, 242, 236, 0.3);
+  --muted: rgba(31, 65, 83, 0.78);
+  --muted-strong: rgba(31, 65, 83, 0.9);
+  --blu-velo: rgba(51, 100, 126, 0.08);
+
+  /* --- Tipografia ----------------------------------------------------- */
+  --font-display: 'DM Sans', Arial, Helvetica, sans-serif;
+  --font-titolo: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', Arial, Helvetica, sans-serif;
+
+  --fs-h1: clamp(44px, 11vw, 88px);
+  --fs-h2: clamp(36px, 8vw, 58px);
+  --fs-h3: clamp(24px, 5.6vw, 32px);
+  --fs-h4: clamp(20px, 4.8vw, 26px);
+  --fs-num: clamp(30px, 8.6vw, 56px);
+  --fs-stat: clamp(36px, 8.6vw, 54px);
+  --fs-lead: clamp(18px, 4.6vw, 19.5px);
+  --fs-body: clamp(17px, 4.3vw, 18px);
+  --fs-sm: 16px;
+  --fs-xs: clamp(14.5px, 3.7vw, 15.5px);
+  --fs-kicker: 13px;
+  --fs-label: 11px;
+
+  /* --- Spaziature ----------------------------------------------------- */
+  --pad-x: clamp(20px, 5vw, 40px);
+  --sec-y: clamp(76px, 10vw, 104px);
+  --sec-y-sm: clamp(56px, 8vw, 72px);
+  --maxw-text: 740px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--neve);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: var(--blu);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blu-notte);
+}
+
+:focus-visible {
+  outline: 2px solid var(--blu);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: var(--blu);
+  color: var(--neve);
+}
+
+/* `hidden` deve vincere su qualunque display. */
+[hidden] {
+  display: none !important;
+}
+
+/* I titoli dei capitoli, il nome in copertina e «La guida» nel DM Serif Display del
+   sito, maiuscolo come i titoli di unpavedroads.cc. */
+.guida .cap-testa h2,
+.copertina h1,
+.copertina .laguida {
+  font-family: var(--font-titolo);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.copertina h1 {
+  font-size: clamp(40px, 8vw, 72px);
+  line-height: 0.95;
+  color: var(--neve);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
